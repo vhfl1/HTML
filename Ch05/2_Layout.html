@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2_Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper{
+            width: 800px;
+            height: auto;
+            background-color: #aaa;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        header{
+            width: 780px;
+            height: 120px;
+            background-color: #ccc;
+        }
+        main{
+            width: 100%;
+            height: auto;
+            background-color: #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        main > section:nth-of-type(1){
+            width: 760px;
+            height: 200px;
+            background-color: #eee;
+            margin-bottom: 10px;
+        }
+        main > section:nth-of-type(2){
+            width: 760px;
+            height: 200px;
+            background-color: #eee;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h3>Header</h3>
+        </header>
+        <main>
+            <h3>Main</h3>
+            <section>
+                <h4>Section #1</h4>
+            </section>
+            <section>
+                <h4>Section #2</h4>
+            </section>
+        </main>
+        <Footer>
+            <h3>Footer</h3>
+        </Footer>
+    </div>
+</body>
+</html>
