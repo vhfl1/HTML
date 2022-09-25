@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+
+        #wrapper{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        a{text-decoration: none; color: #111;}
+        ul, ol{list-style: none;}
+
+        header{
+            width: 100%;
+            height: 48px;
+            background-color: #e4f0ce;
+            box-sizing: border-box;
+            border-bottom: 2px solid #adbd8c;
+            padding: 10px;
+        }
+        header > h3{
+            font-size: 18px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        main tr > td{
+            vertical-align: top;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        main tr > td:nth-child(1){width: 10%;}
+        main tr > td:nth-child(2){width: 50%;}
+        main tr > td:nth-child(3){width: 20%;}
+        main tr > td:nth-child(4){width: 20%;}
+
+        main ul > li{
+            line-height: 22px;
+        }
+
+        main table ul .name{font-weight: bold;}
+        main table ul .price{font-weight: bold; color: red;}
+        main table ul .rating{
+            height: 20px;
+            margin-top: 76px;
+            font-size: 0;
+            background-image: url(./6장\ 이미지/stars.png);
+            background-size: 100px;
+            background-repeat: no-repeat;
+        }
+        main > table ul .rating.star1{width: 20px;}
+        main > table ul .rating.star2{width: 40px;}
+        main > table ul .rating.star3{width: 60px;}
+        main > table ul .rating.star4{width: 80px;}
+        main > table ul .rating.star5{width: 100px;}
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h3>상품목록</h3>
+        </header>
+        <main>
+            <table border="0">
+                <tr>
+                    <td><img src="./6장 이미지/13.jpg" alt="썸네일"></td>
+                    <td>
+                        <ul>
+                            <li class="name">딸기 500g</li>
+                            <li class="desc">3만원 이상 구매 시 무료배송 해드립니다.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="price">4,000원</li>
+                            <li class="delivery">배송비 2,500원</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="seller">팜스토리</li>
+                            <li class="rating star1">판매등급</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="./6장 이미지/14.jpg" alt="썸네일"></td>
+                    <td>
+                        <ul>
+                            <li class="name">딸기 500g</li>
+                            <li class="desc">3만원 이상 구매 시 무료배송 해드립니다.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="price">4,000원</li>
+                            <li class="delivery">배송비 2,500원</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="seller">팜스토리</li>
+                            <li class="rating star2">판매등급</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="./6장 이미지/15.jpg" alt="썸네일"></td>
+                    <td>
+                        <ul>
+                            <li class="name">딸기 500g</li>
+                            <li class="desc">3만원 이상 구매 시 무료배송 해드립니다.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="price">4,000원</li>
+                            <li class="delivery">배송비 2,500원</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="seller">팜스토리</li>
+                            <li class="rating star3">판매등급</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="./6장 이미지/16.jpg" alt="썸네일"></td>
+                    <td>
+                        <ul>
+                            <li class="name">딸기 500g</li>
+                            <li class="desc">3만원 이상 구매 시 무료배송 해드립니다.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="price">4,000원</li>
+                            <li class="delivery">배송비 2,500원</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="seller">팜스토리</li>
+                            <li class="rating star4">판매등급</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="./6장 이미지/17.jpg" alt="썸네일"></td>
+                    <td>
+                        <ul>
+                            <li class="name">딸기 500g</li>
+                            <li class="desc">3만원 이상 구매 시 무료배송 해드립니다.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="price">4,000원</li>
+                            <li class="delivery">배송비 2,500원</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="seller">팜스토리</li>
+                            <li class="rating star5">판매등급</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
