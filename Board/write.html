@@ -4,30 +4,7 @@
     <meta charset="UTF-8">
     <title>write</title>
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        #board.write{
-            width: 720px;
-            margin: 60px auto;
-
-        }
-        #board.write > table{
-            width: 100%;
-            height: auto;
-        }
-        #board.write > table > caption{}
-        #board.write > table tr{}
-        #board.write > table tr > th{}
-        #board.write > table tr > td{}
-        #board.write > table tr > td > input{}
-        #board.write > table tr > td > a{}
-        #board.write > table tr > td > p{}
-
-        #board.write > div > a:nth-child(1){}
-        #board.write > div > a:nth-child(2){}
-
-
-
-    </style>
+   
 </head>
 <body>
     <div id="wrapper">
@@ -40,30 +17,33 @@
             
         </header>
         <main id="board" class="write">
-            <table border="1">
-                <caption>글쓰기</caption>
-                <tr>
-                    <th>제목</th>
-                    <td>
-                        <input type="text" placeholder="제목을 입력하세요.">
-                    </td>
-                </tr>
-                <tr>
-                    <th>내용</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>첨부</th>
-                    <td>
-                        <a href="#">파일선택</a>
-                        <p>선택된 파일 없음</p>
-                    </td>
-                </tr>
-            </table>
-            <div>
-                <a href="#">취소</a>
-                <a href="#">작성완료</a>
-            </div>
+            <form action="#">
+                <table border="0">
+                    <caption>글쓰기</caption>
+                    <tr>
+                        <th>제목</th>
+                        <td>
+                            <input type="text" name="title" placeholder="제목을 입력하세요."/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>
+                            <textarea name="content"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>파일</th>
+                        <td>
+                            <input type="file" name="file"/>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <a href="./list.html" class="btn btnCancel">취소</a>
+                    <input type="submit" value="작성완료" class="btn btnComplete"/>
+                </div>
+            </form>
         </main>
         <footer>
             <p>ⓒCopyleft by chhak.or.kr</p>
