@@ -15,7 +15,6 @@ p{
     width: 980px;
     height: auto;
     margin: 0 auto;
-    border: 1px solid red;
     box-sizing: border-box;
 }
 
@@ -26,8 +25,6 @@ header{
     height: 142px;
     background-image: url(../img/head_top_line.png);
     background-repeat: no-repeat;
-    border: 1px solid blue;
-    box-sizing: border-box;
 }
 
 header > .logo{
@@ -94,15 +91,11 @@ header > .gnb > li > a > img{
 main{
     width: 100%;
     height: auto;
-    border: 1px solid blue;
-    box-sizing: border-box;
 }
 
 main > div{
     width: 100%;
     margin-top: 10px;
-    border: 1px solid green;
-    box-sizing: border-box;
 }
 
 main > .slider{
@@ -110,6 +103,32 @@ main > .slider{
     height: 312px;
     overflow: hidden;
 }
+main > .slider > img{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+main > .slider > .banner{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 230px;
+    height: 312px;
+    background-image: url(../img/main_banner_bg.jpg);
+}
+main > .slider > .banner > img:nth-child(1){
+    float: right;
+    margin: 10px;
+}
+main > .slider > .banner > img:nth-child(2){
+    margin-top: -20px;
+    margin-left: 10px;
+}
+main > .slider > .banner > img:nth-child(3){
+    margin-left: 10px;
+}
+
+
 main > .quick{
     height: 74px;
     overflow: hidden;
@@ -121,7 +140,6 @@ main > .quick > a{
     width: 50%;
     height: 100%;
     padding: 16px;
-    border: 1px solid orange;
     box-sizing: border-box;
 }
 main > .quick > a:nth-child(1){background-image: url(../img/main_banner_sub1_bg.jpg);}
@@ -137,8 +155,6 @@ main > .latest > div{
     float: left;
     width: 33.33%;
     height: 100%;
-    border: 1px solid orange;
-    box-sizing: border-box;
 }
 main > .latest > div > a{
     position: absolute;
@@ -156,7 +172,7 @@ main > .latest table{
     bottom: 16px;
     color: #6a6a6a;
 }
-main > .latest > table a{
+main > .latest table tr > td > a{
     display: block;
     width: 140px;
     white-space: nowrap;
@@ -177,12 +193,37 @@ main > .info{
 main > .info > div{
     float: left;
     height: 100%;
-    border: 1px solid orange;
-    box-sizing: border-box;
 }
 main > .info > div:nth-child(1){width: 386px;}
-main > .info > div:nth-child(2){width: 230px;}
-main > .info > div:nth-child(3){width: 358px;}
+main > .info > div:nth-child(2){
+    width: 230px;
+    padding-left: 16px;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+main > .info > div:nth-child(3){
+    width: 360px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+main > .info > div > .tel{overflow: hidden;}
+main > .info > div > .tel > *{
+    float: left;
+    margin-right: 16px;
+}
+main > .info > div > .tel > .time{
+    line-height: 18px;
+    color: #666;
+}
+main > .info > div > .btns{margin-top: 16px;}
+
+main > .info > div > .tit{margin-bottom: 16px;}
+main > .info > div > .account{line-height: 18px; color: #666;}
+
+
+
 
 
 /* 푸터 */
@@ -212,8 +253,6 @@ footer > p > em{
         #sub{
             width: 100%;
             height: auto;
-            border: 1px solid blue;
-            box-sizing: border-box;
         }
         #sub > div{
             position: relative;
